@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./css/index.css" />
     </head>
     <body>
-        <div class="navbar">
+        <header class="navbar">
             <div class="navbar-top">
                 <div class="nav-title">
                     <h1>Taller de integracion</h1>
@@ -24,12 +24,47 @@
             </div>
             <ul id="navLinks" class="nav-links">
                 <a href="#" class="link-presentacion"><li>Presentación</li></a>
-                <a href="#" class="link-otoño"><li>Otoño</li></a>
+                <a href="#" class="link-otono"><li>Otoño</li></a>
                 <a href="#" class="link-invierno"><li>Invierno</li></a>
                 <a href="#" class="link-primavera"><li>Primavera</li></a>
                 <a href="#" class="link-verano"><li>Verano</li></a>
             </ul>
-        </div>
+        </header>
+        <main class="main">
+            <h2>Licenciatura en organización y gestión educativa</h2>
+            <section class="presentacion">
+                <h3>Presentación</h3>
+                <video
+                    class="presentacion-video"
+                    src="./assets/presentacion.mp4"
+                    controls
+                ></video>
+            </section>
+            <section class="cuartos-section">
+                <h3>Cuartos</h3>
+                <div class="cuartos-direction">
+                    <div class="cuarto_otono">
+                        <img src="./assets/otono.jpg" alt="background-img" />
+                        <h4>Otoño</h4>
+                    </div>
+                    <div class="cuarto_invierno">
+                        <img src="./assets/invierno.jpg" alt="background-img" />
+                        <h4>Invierno</h4>
+                    </div>
+                    <div class="cuarto_primavera">
+                        <img
+                            src="./assets/primavera.jpg"
+                            alt="background-img"
+                        />
+                        <h4>Primavera</h4>
+                    </div>
+                    <div class="cuarto_verano">
+                        <img src="./assets/verano.jpg" alt="background-img" />
+                        <h4>Verano</h4>
+                    </div>
+                </div>
+            </section>
+        </main>
         <script src="./js/index.js"></script>
     </body>
 </html>

@@ -7,6 +7,9 @@
 }
 
 .navbar {
+    z-index: 100;
+    top: 0;
+    position: sticky;
     background: #e8f6ef;
     width: 100%;
     display: flex;
@@ -91,7 +94,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     height: 90vh;
     list-style: none;
     padding: 0;
-    animation: nav-animation 1s;
+    animation: nav-animation 0.7s;
 }
 
 @keyframes nav-animation {
@@ -110,7 +113,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     position: relative;
     padding: 30px 0;
     text-decoration: none;
-    animation: links-animation 1.5s;
+    animation: links-animation 1.3s;
 }
 
 @keyframes links-animation {
@@ -128,7 +131,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     font-weight: 800;
     text-decoration: none;
     color: #4c4c6d;
-    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .link-presentacion:hover {
@@ -136,7 +139,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     color: white;
 }
 
-.link-otoño:hover {
+.link-otono:hover {
     box-shadow: inset 100vw 0 0 0 #ec9a02;
     color: white;
 }
@@ -154,4 +157,123 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .link-verano:hover {
     box-shadow: inset 100vw 0 0 0 #fffb20;
     color: rgb(109, 109, 109);
+}
+
+/* main */
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fdfae0;
+}
+
+.main > h2 {
+    letter-spacing: 3px;
+    font-weight: 800;
+    margin-top: 2rem;
+    width: 80%;
+    color: #4c4c6d;
+    font-size: 20px;
+    text-align: center;
+}
+
+.presentacion {
+    width: 65%;
+    background: #ff9c4c;
+    color: #993800;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid #ececec;
+}
+
+.presentacion h3 {
+    font-size: 23px;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #993800;
+}
+.presentacion-video {
+    border-radius: 20px;
+    width: 100%;
+    border: 0;
+}
+
+.cuartos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuartos-section h3 {
+    font-size: 30px;
+    background-image: linear-gradient(to right, #ff7300, #2ecdfd, #31ff16);
+    color: transparent;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: background-color-animation 4s infinite linear;
+}
+
+@keyframes background-color-animation {
+    0% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.cuartos-direction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuartos-direction div {
+    margin: 1.5rem;
+}
+
+.cuarto_otono,
+.cuarto_invierno,
+.cuarto_primavera,
+.cuarto_verano {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid #edfaff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.cuarto_otono img,
+.cuarto_invierno img,
+.cuarto_primavera img,
+.cuarto_verano img {
+    opacity: 0.9;
+    position: absolute;
+    width: 150%;
+}
+
+.cuarto_otono h4,
+.cuarto_invierno h4,
+.cuarto_primavera h4,
+.cuarto_verano h4 {
+    z-index: 10;
+    font-size: 30px;
+    color: #fff;
 }
