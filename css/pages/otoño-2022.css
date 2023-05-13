@@ -4,6 +4,8 @@
 * {
     margin: 0;
     font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
 }
 
 body {
@@ -175,6 +177,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #fffefc;
 }
 
 main h2 {
@@ -190,10 +193,10 @@ main h2 {
 }
 
 .materias h3 {
-    color: #4c4c6d;
+    color: #e8f6ef;
     font-size: 25px;
     font-weight: 800;
-    background: linear-gradient(to bottom, #ff9317, #ffc481, #ffa43c);
+    background: linear-gradient(to bottom, #ff4800, #ff7742, #ff4800);
     margin-bottom: 1rem;
     padding: 0 10px;
     display: inline-block;
@@ -209,6 +212,7 @@ main h2 {
 }
 
 .materias-links a {
+    color: #4c4c6d;
     background: #e8f6ef;
     font-size: 15px;
     font-weight: 600;
@@ -233,10 +237,14 @@ main h2 {
 .materia-02,
 .materia-03,
 .materia-04 {
+    color: #4c4c6d;
     width: 100%;
     margin-top: 2rem;
     position: relative;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .materia-01 h3,
@@ -252,11 +260,166 @@ main h2 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: inline-block;
     transform: skew(-20deg);
-    left: -5%;
+    left: -10%;
     padding: 3px 15px 3px 3rem;
 }
 
 .materia-03 h3,
 .materia-04 h3 {
     width: fit-content;
+    left: -20%;
 }
+
+.materia-01 img {
+    margin: 1rem 0;
+    width: 90%;
+    border: 3px solid #ec9a02;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.materia-01-calificacion {
+    margin: 0 20px 1rem 20px;
+}
+
+.materia-01-calificacion h4 {
+    font-size: 16px;
+}
+
+.materia-01-calificacion p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.materias-proceso {
+    margin: 1rem 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.materias-proceso h4 {
+    font-size: 16px;
+    display: flex;
+    border-bottom: 2px solid #4c4c6d;
+}
+
+.materias-proceso p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.materias-autoevaluacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 20px;
+}
+
+.materias-autoevaluacion {
+    position: relative;
+    padding: 15px 25px;
+}
+
+.materias-autoevaluacion:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    aspect-ratio: 1/1;
+    width: 10%;
+    border-top: 4px solid #ec9a02;
+    border-left: 4px solid #ec9a02;
+}
+
+.materias-autoevaluacion:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    aspect-ratio: 1/1;
+    width: 10%;
+    border-bottom: 4px solid #ec9a02;
+    border-right: 4px solid #ec9a02;
+}
+
+.materias-autoevaluacion h4 {
+    color: #ec9a02;
+    font-size: 16px;
+    border-bottom: 3px solid #ec9a02;
+    margin-bottom: 5px;
+}
+
+.materias-autoevaluacion p {
+    font-size: 15px;
+    font-style: italic;
+    text-align: justify;
+}
+
+/* materia 2 */
+.materia-02-comentario {
+    margin: 1rem 20px;
+}
+
+.materia-02-comentario {
+    font-size: 16px;
+}
+
+.materia-02-comentario p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.materia-02-conclucion {
+    margin: 1rem 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.materia-02-conclucion h4 {
+    font-size: 16px;
+    display: flex;
+    border-bottom: 2px solid #4c4c6d;
+}
+
+.materia-02-conclucion p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* materia 3 */
+.materia-03-evidencia {
+    margin: 1rem 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.materia-03-evidencia h4 {
+    font-size: 16px;
+    display: flex;
+    border-bottom: 2px solid #4c4c6d;
+}
+
+.materia-03-evidencia p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.materia-03-comentario {
+    text-align: center;
+    font-weight: 800;
+    background: #fde3bc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 3px solid #ffd85a;
+}
+
+/* materia 4 */
