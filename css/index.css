@@ -6,6 +6,11 @@
     font-family: "Nunito", sans-serif;
 }
 
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 .navbar {
     z-index: 100;
     top: 0;
@@ -95,6 +100,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     list-style: none;
     padding: 0;
     animation: nav-animation 0.7s;
+    overflow-x: hidden;
 }
 
 @keyframes nav-animation {
@@ -131,7 +137,13 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     font-weight: 800;
     text-decoration: none;
     color: #4c4c6d;
-    transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+    transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out,
+        transform 0.3s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.nav-links a:hover {
+    transform: scale(1.07);
 }
 
 .link-presentacion:hover {
@@ -180,9 +192,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .presentacion {
-    width: 65%;
-    background: #ff9c4c;
-    color: #993800;
+    width: 70%;
+    background: #edfaff;
+    color: #4c4c6d;
     margin: 2rem 0;
     display: flex;
     flex-direction: column;
@@ -190,18 +202,22 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 2px solid #ececec;
+    border: 2px solid #aaaaaa;
 }
 
 .presentacion h3 {
     font-size: 23px;
     margin-bottom: 1rem;
-    border-bottom: 3px solid #993800;
+    border-bottom: 2px solid #4c4c6d;
 }
 .presentacion-video {
+    aspect-ratio: 1/1;
+    background: #4c4c6d;
     border-radius: 20px;
     width: 100%;
     border: 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .cuartos-section {
@@ -233,6 +249,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .cuartos-direction {
+    position: relative;
+    overflow-x: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -243,10 +261,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     margin: 1.5rem;
 }
 
-.cuarto_otono,
-.cuarto_invierno,
-.cuarto_primavera,
-.cuarto_verano {
+.cuarto_otono a,
+.cuarto_invierno a,
+.cuarto_primavera a,
+.cuarto_verano a {
+    text-decoration: none;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -258,21 +277,22 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     border: 2px solid #edfaff;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
         rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.cuarto_otono img,
-.cuarto_invierno img,
-.cuarto_primavera img,
-.cuarto_verano img {
+.cuarto_otono a img,
+.cuarto_invierno a img,
+.cuarto_primavera a img,
+.cuarto_verano a img {
     opacity: 0.9;
     position: absolute;
     width: 150%;
 }
 
-.cuarto_otono h4,
-.cuarto_invierno h4,
-.cuarto_primavera h4,
-.cuarto_verano h4 {
+.cuarto_otono a h4,
+.cuarto_invierno a h4,
+.cuarto_primavera a h4,
+.cuarto_verano a h4 {
     z-index: 10;
     font-size: 30px;
     color: #fff;

@@ -8,3 +8,15 @@ checkbox.addEventListener("change", function () {
         navLinks.style.display = "none";
     }
 });
+
+let cuartoLinks = document.querySelectorAll(".cuartoLinks");
+
+cuartoLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        setTimeout(function () {
+            window.location.href = link.getAttribute("href");
+        }, 1000);
+    });
+});
