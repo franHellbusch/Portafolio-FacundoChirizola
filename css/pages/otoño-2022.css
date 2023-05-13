@@ -168,9 +168,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     color: white;
 }
 
-.link-verano:hover {
-    box-shadow: inset 100vw 0 0 0 #fffb20;
-    color: rgb(109, 109, 109);
+.link-otono2023:hover {
+    box-shadow: inset 100vw 0 0 0 #ec9a02;
+    color: white;
 }
 
 main {
