@@ -17,6 +17,18 @@ cuartoLinks.forEach((link) => {
 
         setTimeout(function () {
             window.location.href = link.getAttribute("href");
-        }, 1000);
+        }, 500);
+    });
+});
+
+let navbarLinks = document.querySelectorAll(".navbar-links");
+
+navbarLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        setTimeout(function () {
+            window.location.href = link.getAttribute("href");
+        }, 500);
     });
 });
