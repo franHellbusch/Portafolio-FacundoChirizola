@@ -153,7 +153,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .link-otono:hover {
-    box-shadow: inset 100vw 0 0 0 #219afd;
+    box-shadow: inset 100vw 0 0 0 #ec9a02;
     color: white;
 }
 
@@ -168,7 +168,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .link-otono2023:hover {
-    box-shadow: inset 100vw 0 0 0 #219afd;
+    box-shadow: inset 100vw 0 0 0 #ec9a02;
     color: white;
 }
 
@@ -243,7 +243,6 @@ main h2 {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .materia-01 h3,
@@ -251,7 +250,7 @@ main h2 {
 .materia-03 h3,
 .materia-04 h3 {
     position: relative;
-    width: 70%;
+    width: fit-content;
     font-size: 17px;
     background: linear-gradient(to right, #46b0d6, #0077ff);
     color: #e8f6ef;
@@ -259,17 +258,8 @@ main h2 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: inline-block;
     transform: skew(-20deg);
-    left: -10%;
-    padding: 3px 15px 3px 3rem;
-}
-
-.materia-01 h3 {
-    width: 75%;
-}
-
-.materia-04 h3 {
-    width: fit-content;
-    left: -25%;
+    left: -15%;
+    padding: 3px 15px 3px 20%;
 }
 
 .materias-aprendizaje {
@@ -347,4 +337,104 @@ main h2 {
     font-size: 15px;
     font-style: italic;
     text-align: justify;
+}
+
+@media (min-width: 600px) {
+    .materia-01 h3,
+    .materia-02 h3,
+    .materia-03 h3,
+    .materia-04 h3 {
+        font-size: 20px;
+    }
+
+    .materias-autoevaluacion {
+        width: 50%;
+        align-self: center;
+    }
+
+    .materias-autoevaluacion h4 {
+        font-size: 18px;
+    }
+
+    .materias-autoevaluacion p {
+        font-size: 16px;
+    }
+
+    .materias-aprendizaje h4 {
+        font-size: 18px;
+    }
+
+    .materias-aprendizaje p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 900px) {
+    main h2 {
+        font-size: 30px;
+    }
+
+    .materias h3 {
+        font-size: 30px;
+    }
+
+    .materias-links a {
+        font-size: 17px;
+        padding: 10px 15px;
+    }
+
+    .materia-01 h3,
+    .materia-02 h3,
+    .materia-03 h3,
+    .materia-04 h3 {
+        padding: 5px 10px;
+        font-size: 22px;
+        align-self: center;
+        left: auto;
+    }
+
+    .materias-autoevaluacion {
+        width: 40%;
+        align-self: center;
+    }
+
+    .materias-autoevaluacion h4 {
+        font-size: 20px;
+    }
+
+    .materias-autoevaluacion p {
+        font-size: 15px;
+    }
+
+    .materia-01,
+    .materia-02,
+    .materia-03,
+    .materia-04 {
+        width: 75%;
+    }
+
+    .materias-aprendizaje h4 {
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+
+    .materias-aprendizaje p {
+        font-size: 15px;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+
+    .materias-aprendizaje-comentario {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+@media (min-width: 1320px) {
+    .materia-01,
+    .materia-02,
+    .materia-03,
+    .materia-04 {
+        width: 50%;
+    }
 }

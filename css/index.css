@@ -190,6 +190,12 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     text-align: center;
 }
 
+.presentacion-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .presentacion {
     width: 70%;
     background: #edfaff;
@@ -336,4 +342,130 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     z-index: 10;
     font-size: 30px;
     color: #fff;
+}
+
+@media (min-width: 600px) {
+    /* main */
+
+    .main > h2 {
+        width: 60%;
+    }
+
+    .presentacion {
+        width: 50%;
+    }
+
+    .youtube-video {
+        width: 60%;
+    }
+
+    /* cuartos section */
+    .cuartos-section h3 {
+        font-size: 40px;
+    }
+
+    .cuartos-direction {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cuartos-direction div {
+        width: 20%;
+    }
+
+    .cuarto_otono a,
+    .cuarto_invierno a,
+    .cuarto_primavera a,
+    .cuarto_verano a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cuarto_otono a h4,
+    .cuarto_invierno a h4,
+    .cuarto_primavera a h4,
+    .cuarto_verano a h4 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    .main > h2 {
+        font-size: 30px;
+    }
+
+    .presentacion-total {
+        margin: 3rem 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .presentacion {
+        width: 30%;
+        margin: 0;
+    }
+
+    .presentacion h3 {
+        font-size: 23px;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #4c4c6d;
+    }
+    .presentacion-video {
+        aspect-ratio: 1/1;
+        background: #4c4c6d;
+        border-radius: 20px;
+        width: 100%;
+        border: 0;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .anijovich {
+        width: 65%;
+        color: #4c4c6d;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .anijovich-text {
+        text-align: justify;
+        width: 90%;
+    }
+
+    .anijovich-name {
+        width: 90%;
+    }
+
+    .youtube-video {
+        margin: 0;
+        width: 90%;
+    }
+
+    /* cuartos section */
+    .cuartos-section {
+        width: 80%;
+    }
+
+    .cuarto_otono a h4,
+    .cuarto_invierno a h4,
+    .cuarto_primavera a h4,
+    .cuarto_verano a h4 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .presentacion-total {
+        margin: 3rem 20%;
+    }
+
+    /* cuartos section */
+    .cuartos-section {
+        width: 60%;
+    }
 }
