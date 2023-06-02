@@ -172,3 +172,458 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     box-shadow: inset 100vw 0 0 0 #ec9a02;
     color: white;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fffefc;
+}
+
+main h2 {
+    margin: 2rem 0;
+    font-size: 25px;
+    color: #4c4c6d;
+    border-bottom: 3px solid #4c4c6d;
+}
+
+.materias {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.materias h3 {
+    color: #e8f6ef;
+    font-size: 25px;
+    font-weight: 800;
+    background: linear-gradient(to bottom, #ff4800, #ff7742, #ff4800);
+    margin-bottom: 1rem;
+    padding: 0 10px;
+    display: inline-block;
+    transform: skew(-15deg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.materias-links {
+    color: #4c4c6d;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.materias-links a {
+    color: #4c4c6d;
+    background: #e8f6ef;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0.5rem 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.materias-links a:hover {
+    transform: scale(1.03);
+    color: #ff4800;
+}
+
+.materias-links a b {
+    color: #ff4800;
+}
+
+.materia-01,
+.materia-02,
+.materia-03,
+.materia-04 {
+    color: #4c4c6d;
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.materia-01 h3,
+.materia-02 h3,
+.materia-03 h3,
+.materia-04 h3 {
+    position: relative;
+    width: fit-content;
+    font-size: 17px;
+    background: linear-gradient(to right, #ec9a02, #fd6021);
+    color: #e8f6ef;
+    border: 2px solid #e8f6ef;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+    transform: skew(-20deg);
+    left: -15%;
+    padding: 3px 15px 3px 20%;
+}
+
+.materia-01 img {
+    align-self: center;
+    margin: 1rem 0;
+    width: 90%;
+    border: 3px solid #ec9a02;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.materia-01-calificacion {
+    margin: 1rem 20px;
+}
+
+.materia-01-calificacion h4 {
+    font-size: 16px;
+    border-bottom: 2px solid #4c4c6d;
+    width: fit-content;
+}
+
+.materia-01-calificacion p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.materias-proceso {
+    margin: 1rem 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.materias-proceso h4 {
+    font-size: 16px;
+    display: flex;
+    border-bottom: 2px solid #4c4c6d;
+}
+
+.materias-proceso p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.materias-autoevaluacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 20px;
+}
+
+.materias-autoevaluacion {
+    position: relative;
+    padding: 15px 25px;
+}
+
+.materias-autoevaluacion:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    aspect-ratio: 1/1;
+    width: 10%;
+    border-top: 4px solid #ec9a02;
+    border-left: 4px solid #ec9a02;
+}
+
+.materias-autoevaluacion:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    aspect-ratio: 1/1;
+    width: 10%;
+    border-bottom: 4px solid #ec9a02;
+    border-right: 4px solid #ec9a02;
+}
+
+.materias-autoevaluacion h4 {
+    color: #ec9a02;
+    font-size: 16px;
+    border-bottom: 3px solid #ec9a02;
+    margin-bottom: 5px;
+}
+
+.materias-autoevaluacion p {
+    font-size: 15px;
+    font-style: italic;
+    text-align: justify;
+}
+
+/* materia 2 */
+.materia-02-comentario {
+    margin: 1rem 20px;
+}
+
+.materia-02-comentario {
+    font-size: 16px;
+}
+
+.materia-02-comentario p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.materia-02-comentario p > b {
+    color: #fd6021;
+}
+
+.materia-02-conclucion {
+    margin: 1rem 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.materia-02-conclucion h4 {
+    font-size: 16px;
+    display: flex;
+    border-bottom: 2px solid #4c4c6d;
+}
+
+.materia-02-conclucion p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* materia 3 */
+.materia-evidencia {
+    margin: 1rem 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.materia-evidencia h4 {
+    font-size: 16px;
+    display: flex;
+    border-bottom: 2px solid #4c4c6d;
+}
+
+.materia-evidencia p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.materia-03-comentario {
+    text-align: center;
+    font-weight: 800;
+    background: #fde3bc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 3px solid #ffd85a;
+}
+
+@media (min-width: 600px) {
+    .materia-01 h3,
+    .materia-02 h3,
+    .materia-03 h3,
+    .materia-04 h3 {
+        font-size: 20px;
+    }
+
+    .materias-autoevaluacion {
+        width: 50%;
+        align-self: center;
+    }
+
+    .materia-01 img {
+        width: 70%;
+    }
+
+    .materia-01-calificacion h4 {
+        font-size: 18px;
+    }
+
+    .materia-01-calificacion p {
+        font-size: 14px;
+    }
+
+    .materias-proceso h4 {
+        font-size: 18px;
+    }
+
+    .materias-proceso p {
+        font-size: 14px;
+    }
+
+    .materias-autoevaluacion h4 {
+        font-size: 18px;
+    }
+
+    .materias-autoevaluacion p {
+        font-size: 16px;
+    }
+
+    /* materia 2 */
+    .materia-02-comentario {
+        font-size: 18px;
+    }
+
+    .materia-02-comentario p {
+        font-size: 14px;
+    }
+
+    .materia-02-conclucion h4 {
+        font-size: 18px;
+    }
+
+    .materia-02-conclucion p {
+        font-size: 14px;
+    }
+
+    /* materia 3 */
+
+    .materia-evidencia h4 {
+        font-size: 18px;
+    }
+
+    .materia-evidencia p {
+        font-size: 14px;
+    }
+
+    .materia-03-comentario {
+        width: 70%;
+        align-self: center;
+    }
+}
+
+@media (min-width: 900px) {
+    main h2 {
+        font-size: 30px;
+    }
+
+    .materias h3 {
+        font-size: 30px;
+    }
+
+    .materias-links a {
+        font-size: 17px;
+        padding: 10px 15px;
+    }
+
+    .materia-01 h3,
+    .materia-02 h3,
+    .materia-03 h3,
+    .materia-04 h3 {
+        padding: 5px 10px;
+        font-size: 22px;
+        align-self: center;
+        left: auto;
+    }
+
+    .materias-autoevaluacion {
+        width: 40%;
+        align-self: center;
+    }
+
+    .materia-01 {
+        width: 75%;
+    }
+
+    .materia-01 img {
+        margin: 3rem 0;
+        width: 55%;
+    }
+
+    .materia-01-calificacion {
+        margin: 3rem 20px 1rem 20px;
+    }
+
+    .materia-01-calificacion h4 {
+        font-size: 20px;
+    }
+
+    .materia-01-calificacion p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .materias-proceso h4 {
+        font-size: 20px;
+    }
+
+    .materias-proceso p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .materias-autoevaluacion h4 {
+        font-size: 20px;
+    }
+
+    .materias-autoevaluacion p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* materia 2 */
+    .materia-02 {
+        width: 75%;
+    }
+
+    .materia-02-comentario {
+        margin-top: 3rem;
+        font-size: 20px;
+    }
+
+    .materia-02-comentario p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .materia-02-conclucion h4 {
+        font-size: 20px;
+    }
+
+    .materia-02-conclucion p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* materia 3 */
+    .materia-03 {
+        width: 75%;
+    }
+
+    .materia-evidencia h4 {
+        margin-top: 3rem;
+        font-size: 20px;
+    }
+
+    .materia-evidencia p {
+        font-size: 15px;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+
+    .materia-03-comentario {
+        width: 50%;
+    }
+
+    /* materia 4 */
+    .materia-04 {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1320px) {
+    .materia-01,
+    .materia-02,
+    .materia-03,
+    .materia-04 {
+        width: 50%;
+    }
+
+    .materia-01 img {
+        width: 60%;
+    }
+}
