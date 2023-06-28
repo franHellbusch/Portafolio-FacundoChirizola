@@ -413,6 +413,16 @@ main h2 {
     font-style: italic;
 }
 
+.video-evidencia {
+    aspect-ratio: 2/1;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2px solid #e8f6ef;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .materia-03-comentario {
     text-align: center;
     font-weight: 800;
@@ -493,6 +503,11 @@ main h2 {
     .materia-03-comentario {
         width: 70%;
         align-self: center;
+    }
+
+    .video-evidencia {
+        width: 80%;
+        margin-bottom: 2rem;
     }
 }
 
@@ -607,6 +622,12 @@ main h2 {
 
     .materia-03-comentario {
         width: 50%;
+    }
+
+    .video-evidencia {
+        width: 80%;
+        margin-top: 2rem;
+        margin-bottom: 0;
     }
 
     /* materia 4 */
