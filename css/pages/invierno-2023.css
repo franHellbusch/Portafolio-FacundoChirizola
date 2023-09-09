@@ -1,4 +1,3 @@
-/* font */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,600;0,800;1,200;1,800&display=swap");
 
 * {
@@ -176,7 +175,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fffefc;
+  background: #f0f3ff;
 }
 
 main h2 {
@@ -195,7 +194,7 @@ main h2 {
   color: #e8f6ef;
   font-size: 25px;
   font-weight: 800;
-  background: linear-gradient(to bottom, #ff4800, #ff7742, #ff4800);
+  background: linear-gradient(to bottom, #0077ff, #499eff, #0077ff);
   margin-bottom: 1rem;
   padding: 0 10px;
   display: inline-block;
@@ -225,11 +224,11 @@ main h2 {
 
 .materias-links a:hover {
   transform: scale(1.03);
-  color: #ff4800;
+  color: #0077ff;
 }
 
 .materias-links a b {
-  color: #ff4800;
+  color: #0077ff;
 }
 
 .materia-01,
@@ -252,7 +251,7 @@ main h2 {
   position: relative;
   width: fit-content;
   font-size: 17px;
-  background: linear-gradient(to right, #ec9a02, #fd6021);
+  background: linear-gradient(to right, #46b0d6, #0077ff);
   color: #e8f6ef;
   border: 2px solid #e8f6ef;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -262,26 +261,21 @@ main h2 {
   padding: 3px 15px 3px 20%;
 }
 
-.materia-01 img {
-  align-self: center;
-  margin: 1rem 0;
-  width: 90%;
-  border: 3px solid #ec9a02;
-  border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.materia-01-calificacion {
+.materias-aprendizaje {
   margin: 1rem 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.materia-01-calificacion h4 {
+.materias-aprendizaje h4 {
   font-size: 16px;
-  border-bottom: 2px solid #4c4c6d;
-  width: fit-content;
+  display: flex;
+  align-self: center;
+  text-align: center;
 }
 
-.materia-01-calificacion p {
+.materias-aprendizaje p {
   margin-top: 5px;
   font-size: 13px;
   font-style: italic;
@@ -306,6 +300,15 @@ main h2 {
   font-style: italic;
 }
 
+.materias-aprendizaje-comentario {
+  text-align: center;
+  font-weight: 800;
+  background: #c5e0ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 3px solid #a5cfff;
+}
+
 .materias-autoevaluacion {
   display: flex;
   flex-direction: column;
@@ -326,8 +329,8 @@ main h2 {
   left: 0px;
   aspect-ratio: 1/1;
   width: 10%;
-  border-top: 4px solid #ec9a02;
-  border-left: 4px solid #ec9a02;
+  border-top: 4px solid #219afd;
+  border-left: 4px solid #219afd;
 }
 
 .materias-autoevaluacion:after {
@@ -337,14 +340,14 @@ main h2 {
   right: 0px;
   aspect-ratio: 1/1;
   width: 10%;
-  border-bottom: 4px solid #ec9a02;
-  border-right: 4px solid #ec9a02;
+  border-bottom: 4px solid #219afd;
+  border-right: 4px solid #219afd;
 }
 
 .materias-autoevaluacion h4 {
-  color: #ec9a02;
+  color: #219afd;
   font-size: 16px;
-  border-bottom: 3px solid #ec9a02;
+  border-bottom: 3px solid #219afd;
   margin-bottom: 5px;
 }
 
@@ -354,81 +357,37 @@ main h2 {
   text-align: justify;
 }
 
-/* materia 2 */
-.materia-02-comentario {
-  margin: 1rem 20px;
-}
-
-.materia-02-comentario {
-  font-size: 16px;
-}
-
-.materia-02-comentario p {
-  margin-top: 5px;
-  font-size: 13px;
-  font-style: italic;
-}
-
-.materia-02-comentario p > b {
-  color: #fd6021;
-}
-
-.materia-02-conclucion {
-  margin: 1rem 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.materia-02-conclucion h4 {
-  font-size: 16px;
-  display: flex;
-  border-bottom: 2px solid #4c4c6d;
-}
-
-.materia-02-conclucion p {
-  margin-top: 5px;
-  font-size: 13px;
-  font-style: italic;
-}
-
-/* materia 3 */
-.materia-evidencia {
+.materias-evidencia {
   margin: 1rem 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.materia-evidencia h4 {
+.materias-evidencia h4 {
   font-size: 16px;
   display: flex;
   border-bottom: 2px solid #4c4c6d;
 }
 
-.materia-evidencia p {
+.materias-evidencia p {
   margin-top: 5px;
   font-size: 13px;
   font-style: italic;
 }
 
+.materias-evidencia p > b {
+  color: #0077ff;
+}
+
 .video-evidencia {
-  aspect-ratio: 2/1;
-  width: 100%;
+  aspect-ratio: 4/3;
+  width: 80%;
   align-self: center;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   border-radius: 10px;
   border: 2px solid #e8f6ef;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.materia-03-comentario {
-  text-align: center;
-  font-weight: 800;
-  background: #fde3bc;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 3px solid #ffd85a;
 }
 
 @media (min-width: 600px) {
@@ -444,15 +403,19 @@ main h2 {
     align-self: center;
   }
 
-  .materia-01 img {
-    width: 70%;
-  }
-
-  .materia-01-calificacion h4 {
+  .materias-autoevaluacion h4 {
     font-size: 18px;
   }
 
-  .materia-01-calificacion p {
+  .materias-autoevaluacion p {
+    font-size: 16px;
+  }
+
+  .materias-aprendizaje h4 {
+    font-size: 18px;
+  }
+
+  .materias-aprendizaje p {
     font-size: 14px;
   }
 
@@ -464,49 +427,17 @@ main h2 {
     font-size: 14px;
   }
 
-  .materias-autoevaluacion h4 {
+  .materias-evidencia h4 {
     font-size: 18px;
   }
 
-  .materias-autoevaluacion p {
-    font-size: 16px;
-  }
-
-  /* materia 2 */
-  .materia-02-comentario {
-    font-size: 18px;
-  }
-
-  .materia-02-comentario p {
+  .materias-evidencia p {
     font-size: 14px;
-  }
-
-  .materia-02-conclucion h4 {
-    font-size: 18px;
-  }
-
-  .materia-02-conclucion p {
-    font-size: 14px;
-  }
-
-  /* materia 3 */
-
-  .materia-evidencia h4 {
-    font-size: 18px;
-  }
-
-  .materia-evidencia p {
-    font-size: 14px;
-  }
-
-  .materia-03-comentario {
-    width: 70%;
-    align-self: center;
   }
 
   .video-evidencia {
-    width: 80%;
-    margin-bottom: 2rem;
+    width: 60%;
+    margin-top: 2rem;
   }
 }
 
@@ -539,26 +470,35 @@ main h2 {
     align-self: center;
   }
 
-  .materia-01 {
-    width: 75%;
-  }
-
-  .materia-01 img {
-    margin: 3rem 0;
-    width: 55%;
-  }
-
-  .materia-01-calificacion {
-    margin: 3rem 20px 1rem 20px;
-  }
-
-  .materia-01-calificacion h4 {
+  .materias-autoevaluacion h4 {
     font-size: 20px;
   }
 
-  .materia-01-calificacion p {
+  .materias-autoevaluacion p {
     font-size: 15px;
+  }
+
+  .materia-01,
+  .materia-02,
+  .materia-03,
+  .materia-04 {
+    width: 75%;
+  }
+
+  .materias-aprendizaje h4 {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+
+  .materias-aprendizaje p {
+    font-size: 15px;
+    margin-bottom: 1rem;
     text-align: justify;
+  }
+
+  .materias-aprendizaje-comentario {
+    width: 50%;
+    align-self: center;
   }
 
   .materias-proceso h4 {
@@ -570,50 +510,12 @@ main h2 {
     text-align: justify;
   }
 
-  .materias-autoevaluacion h4 {
-    font-size: 20px;
-  }
-
-  .materias-autoevaluacion p {
-    font-size: 15px;
-    text-align: justify;
-  }
-
-  /* materia 2 */
-  .materia-02 {
-    width: 75%;
-  }
-
-  .materia-02-comentario {
+  .materias-evidencia h4 {
     margin-top: 3rem;
     font-size: 20px;
   }
 
-  .materia-02-comentario p {
-    font-size: 15px;
-    text-align: justify;
-  }
-
-  .materia-02-conclucion h4 {
-    font-size: 20px;
-  }
-
-  .materia-02-conclucion p {
-    font-size: 15px;
-    text-align: justify;
-  }
-
-  /* materia 3 */
-  .materia-03 {
-    width: 75%;
-  }
-
-  .materia-evidencia h4 {
-    margin-top: 3rem;
-    font-size: 20px;
-  }
-
-  .materia-evidencia p {
+  .materias-evidencia p {
     font-size: 15px;
     margin-bottom: 1rem;
     text-align: justify;
@@ -624,14 +526,9 @@ main h2 {
   }
 
   .video-evidencia {
-    width: 80%;
+    width: 60%;
     margin-top: 2rem;
     margin-bottom: 0;
-  }
-
-  /* materia 4 */
-  .materia-04 {
-    width: 75%;
   }
 }
 
@@ -641,9 +538,5 @@ main h2 {
   .materia-03,
   .materia-04 {
     width: 50%;
-  }
-
-  .materia-01 img {
-    width: 60%;
   }
 }
