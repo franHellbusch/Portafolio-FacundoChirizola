@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,600;0,800;1,200;1,800&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin-top: 100px;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar {
+  z-index: 100;
+  top: 0;
+  position: sticky;
+  background: #e8f6ef;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbar-top {
+  color: #4c4c6d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 90%;
+  height: 10vh;
+}
+
+.nav-title h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.nav-title p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  cursor: pointer;
+}
+
+.nav-menu span {
+  border-radius: 10px;
+  height: 5px;
+  margin: 3px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.nav-menu span:nth-of-type(1) {
+  background: #fd6021;
+  width: 50%;
+}
+
+.nav-menu span:nth-of-type(2) {
+  background: #219afd;
+  width: 100%;
+}
+
+.nav-menu span:nth-of-type(3) {
+  background: #0da000;
+  width: 75%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(4px, 0px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(17px, -5px) rotatez(45deg);
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  list-style: none;
+  padding: 0;
+  animation: nav-animation 0.7s;
+  overflow-x: hidden;
+}
+
+@keyframes nav-animation {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 90vh;
+  }
+}
+
+.nav-links a li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 30px 0;
+  text-decoration: none;
+  animation: links-animation 1.3s;
+}
+
+@keyframes links-animation {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-links a {
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #4c4c6d;
+  transition: color 0.3s ease-in-out, box-shadow 0.4s ease-in-out, transform 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.nav-links a:hover {
+  transform: scale(1.07);
+}
+
+.link-presentacion:hover {
+  box-shadow: inset 100vw 0 0 0 #cc32da;
+  color: white;
+}
+
+.link-otono:hover {
+  box-shadow: inset 100vw 0 0 0 #ec9a02;
+  color: white;
+}
+
+.link-invierno:hover {
+  box-shadow: inset 100vw 0 0 0 #46b0d6;
+  color: white;
+}
+
+.link-primavera:hover {
+  box-shadow: inset 100vw 0 0 0 #059400;
+  color: white;
+}
+
+.link-otono2023:hover {
+  box-shadow: inset 100vw 0 0 0 #ec9a02;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6fff6;
+}
+
+main h2 {
+  margin: 2rem 0;
+  font-size: 25px;
+  color: #4c4c6d;
+  border-bottom: 3px solid #4c4c6d;
+}
+
+.materias {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.materias h3 {
+  color: #e8f6ef;
+  font-size: 25px;
+  font-weight: 800;
+  background: linear-gradient(to bottom, #059400, #3bff34, #059400);
+  margin-bottom: 1rem;
+  padding: 0 10px;
+  display: inline-block;
+  transform: skew(-15deg);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.materias-links {
+  color: #4c4c6d;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.materias-links a {
+  color: #4c4c6d;
+  background: #e8f6ef;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0.5rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.materias-links a:hover {
+  transform: scale(1.03);
+  color: #059400;
+}
+
+.materias-links a b {
+  color: #059400;
+}
+
+.materia-01,
+.materia-02,
+.materia-03,
+.materia-04 {
+  color: #4c4c6d;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.materia-01 h3,
+.materia-02 h3,
+.materia-03 h3,
+.materia-04 h3 {
+  position: relative;
+  width: fit-content;
+  font-size: 17px;
+  background: linear-gradient(to right, #3bff34, #059400);
+  color: #e8f6ef;
+  border: 2px solid #e8f6ef;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: inline-block;
+  transform: skew(-20deg);
+  left: -15%;
+  padding: 3px 15px 3px 20%;
+}
+
+.materias-aprendizaje {
+  margin: 1rem 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.materias-aprendizaje h4 {
+  font-size: 16px;
+  display: flex;
+  align-self: center;
+  text-align: center;
+}
+
+.materias-aprendizaje p {
+  margin-top: 5px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.materias-aprendizaje-comentario {
+  text-align: center;
+  font-weight: 800;
+  background: #c6ffc4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 3px solid #91ff8d;
+}
+
+.materias-autoevaluacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 20px;
+}
+
+.materias-autoevaluacion {
+  position: relative;
+  padding: 15px 25px;
+}
+
+.materias-autoevaluacion:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  aspect-ratio: 1/1;
+  width: 10%;
+  border-top: 4px solid #11ca00;
+  border-left: 4px solid #11ca00;
+}
+
+.materias-autoevaluacion:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  aspect-ratio: 1/1;
+  width: 10%;
+  border-bottom: 4px solid #11ca00;
+  border-right: 4px solid #11ca00;
+}
+
+.materias-autoevaluacion h4 {
+  color: #11ca00;
+  font-size: 16px;
+  border-bottom: 3px solid #11ca00;
+  margin-bottom: 5px;
+}
+
+.materias-autoevaluacion p {
+  font-size: 15px;
+  font-style: italic;
+  text-align: justify;
+}
+
+.materias-proceso {
+  margin: 1rem 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.materias-proceso h4 {
+  font-size: 16px;
+  display: flex;
+  border-bottom: 2px solid #4c4c6d;
+}
+
+.materias-proceso p {
+  margin-top: 5px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.autoevaluacion-final {
+  border: 5px solid #11ca00;
+  border-radius: 30px;
+}
+
+.autoevaluacion-final::before {
+  display: none;
+}
+
+.autoevaluacion-final::after {
+  display: none;
+}
+
+.materias-evidencia {
+  margin: 1rem 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.materias-evidencia h4 {
+  font-size: 16px;
+  display: flex;
+  border-bottom: 2px solid #4c4c6d;
+}
+
+.materias-evidencia p {
+  margin-top: 5px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.materias-evidencia p > b {
+  color: #11ca00;
+}
+
+.materias-image {
+  align-self: center;
+  margin: 1rem 0;
+  width: 90%;
+  border: 3px solid #ec9a02;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (min-width: 600px) {
+  .materia-01 h3,
+  .materia-02 h3,
+  .materia-03 h3,
+  .materia-04 h3 {
+    font-size: 20px;
+  }
+
+  .materias-autoevaluacion {
+    width: 50%;
+    align-self: center;
+  }
+
+  .materias-autoevaluacion h4 {
+    font-size: 18px;
+  }
+
+  .materias-autoevaluacion p {
+    font-size: 16px;
+  }
+
+  .materias-aprendizaje h4 {
+    font-size: 18px;
+  }
+
+  .materias-aprendizaje p {
+    font-size: 14px;
+  }
+
+  .materias-aprendizaje-comentario {
+    width: 80%;
+    align-self: center;
+  }
+
+  .materias-proceso h4 {
+    font-size: 18px;
+  }
+
+  .materias-proceso p {
+    font-size: 14px;
+  }
+
+  .materias-evidencia h4 {
+    font-size: 18px;
+  }
+
+  .materias-evidencia p {
+    font-size: 14px;
+  }
+
+  .materias-image {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  main h2 {
+    font-size: 30px;
+  }
+
+  .materias h3 {
+    font-size: 30px;
+  }
+
+  .materias-links a {
+    font-size: 17px;
+    padding: 10px 15px;
+  }
+
+  .materia-01 h3,
+  .materia-02 h3,
+  .materia-03 h3,
+  .materia-04 h3 {
+    padding: 5px 10px;
+    font-size: 22px;
+    align-self: center;
+    left: auto;
+  }
+
+  .materias-autoevaluacion {
+    width: 40%;
+    align-self: center;
+  }
+
+  .materias-autoevaluacion h4 {
+    font-size: 20px;
+  }
+
+  .materias-autoevaluacion p {
+    font-size: 15px;
+  }
+
+  .materia-01,
+  .materia-02,
+  .materia-03,
+  .materia-04 {
+    width: 75%;
+  }
+
+  .materias-aprendizaje h4 {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+
+  .materias-aprendizaje p {
+    font-size: 15px;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .materias-aprendizaje-comentario {
+    width: 50%;
+    align-self: center;
+  }
+
+  .materias-proceso h4 {
+    font-size: 20px;
+  }
+
+  .materias-proceso p {
+    font-size: 15px;
+  }
+
+  .materias-evidencia h4 {
+    margin-top: 3rem;
+    font-size: 20px;
+  }
+
+  .materias-evidencia p {
+    font-size: 15px;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .materias-image {
+    margin: 3rem 0;
+    width: 55%;
+  }
+}
+
+@media (min-width: 1320px) {
+  .materia-01,
+  .materia-02,
+  .materia-03,
+  .materia-04 {
+    width: 50%;
+  }
+
+  .materias-image {
+    width: 60%;
+  }
+}
