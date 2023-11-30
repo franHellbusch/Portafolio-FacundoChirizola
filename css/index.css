@@ -1,5 +1,7 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,600;0,800;1,200;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -251,9 +253,175 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.carta-al-lector-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carta-al-lector {
+  background: #ffeedf;
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.carta-al-lector-content {
+  width: calc(90% - 30px);
+  margin: 5% 0;
+  border-left: 5px solid #a34c0065;
+  padding: 20px 0 20px 30px;
+}
+
+.carta-al-lector-content h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #6d3300;
+  margin-bottom: 20px;
+}
+
+.carta-al-lector p {
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+  color: #6d3300;
+}
+
 .mapa-conceptual-autoevaluacion-img {
-  width: 70%;
-  margin: 3rem 0;
+  width: 90%;
+  margin-top: 3rem;
+}
+
+.proyeccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.proyeccion > h3 {
+  font-size: 30px;
+  color: #4c4c6d;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  border-left: 10px double #4c4c6d;
+  border-right: 10px double #4c4c6d;
+  font-family: "Dancing Script", cursive;
+}
+
+.proyeccion-cards {
+  background: #e8f6ef;
+  width: calc(90% - 42px);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+  color: #4c4c6d;
+  border: 1px solid #8dfac5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.proyeccion-cards > p {
+  color: #4c4c6d;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.proyeccion-cards > p > b {
+  color: #00b5ec;
+}
+
+.agradecimiento {
+  margin-top: 2rem;
+  width: calc(90% - 40px);
+  background: #ebffe8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.agradecimiento p {
+  font-style: italic;
+}
+
+.agradecimiento-imagenes {
+  background: #b1f8a5;
+  padding: 10px;
+  width: calc(100% - 20px);
+  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.agradecimiento-imagenes img {
+  width: calc(50% - 5px);
+}
+
+.capacidades-directivas {
+  width: 90%;
+  margin-top: 3rem;
+}
+
+.capacidades-directivas > h3 {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  border-left: 10px double #610269;
+  color: #610269;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.capacidades-directivas-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.capacidades-directivas-cards {
+  width: 90%;
+  background: #fbeafd;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #f9bcff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.capacidades-directivas-cards > h5 {
+  font-size: 18px;
+  color: #4c4c6d;
+  margin-bottom: 15px;
+  border-left: 4px solid #60026981;
+  padding-left: 10px;
+}
+
+.capacidades-directivas-cards > p {
+  color: #4c4c6d;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.capacidades-directivas-cards > p > b {
+  color: #5c1563;
+}
+
+.frase-final {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.frase-final > h4 {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  color: #4c4c6d;
 }
 
 /* un buen director img */
@@ -426,6 +594,71 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   .cuarto_verano a h4 {
     font-size: 20px;
   }
+
+  .carta-al-lector {
+    width: 80%;
+  }
+
+  .carta-al-lector-content h2 {
+    font-size: 55px;
+  }
+
+  .carta-al-lector-content p {
+    font-size: 19px;
+  }
+
+  .mapa-conceptual-autoevaluacion-img {
+    width: 90%;
+  }
+
+  .proyeccion {
+    margin-top: 1rem;
+  }
+
+  .proyeccion > h3 {
+    font-size: 35px;
+  }
+
+  .proyeccion-cards {
+    width: calc(90% - 42px);
+  }
+
+  .agradecimiento {
+    width: calc(80% - 40px);
+  }
+
+  .capacidades-directivas {
+    width: 90%;
+  }
+
+  .capacidades-directivas > h3 {
+    font-size: 35px;
+  }
+
+  .capacidades-directivas-cards-container {
+    justify-content: center;
+  }
+
+  .capacidades-directivas-cards {
+    width: 70%;
+  }
+
+  .capacidades-directivas-cards > h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .capacidades-directivas-cards > p {
+    font-size: 15px;
+  }
+
+  .frase-final {
+    margin: 3rem 0;
+  }
+
+  .frase-final > h4 {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -503,6 +736,67 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   .cuarto_verano a h4 {
     font-size: 25px;
   }
+
+  .carta-al-lector {
+    width: 80%;
+  }
+
+  .carta-al-lector-content h2 {
+    font-size: 55px;
+  }
+
+  .mapa-conceptual-autoevaluacion-img {
+    width: 90%;
+  }
+
+  .proyeccion {
+    margin-top: 1rem;
+  }
+
+  .proyeccion > h3 {
+    font-size: 35px;
+  }
+
+  .proyeccion-cards {
+    width: calc(90% - 42px);
+  }
+
+  .agradecimiento {
+    width: calc(80% - 40px);
+  }
+
+  .capacidades-directivas {
+    width: 90%;
+  }
+
+  .capacidades-directivas-cards-container {
+    justify-content: space-between;
+  }
+
+  .capacidades-directivas-cards {
+    width: calc(50% - 52px);
+  }
+
+  .capacidades-directivas > h3 {
+    font-size: 35px;
+  }
+
+  .capacidades-directivas-cards > h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .capacidades-directivas-cards > p {
+    font-size: 15px;
+  }
+
+  .frase-final {
+    margin: 3rem 0;
+  }
+
+  .frase-final > h4 {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -523,5 +817,173 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   /* cuartos section */
   .cuartos-section {
     width: 60%;
+  }
+
+  .carta-al-lector-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carta-al-lector {
+    background: #ffeedf;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .carta-al-lector-content {
+    width: calc(90% - 30px);
+    margin: 5% 0;
+    border-left: 5px solid #a34c0065;
+    padding: 20px 0 20px 30px;
+  }
+
+  .carta-al-lector-content h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+    color: #6d3300;
+    margin-bottom: 20px;
+  }
+
+  .carta-al-lector p {
+    font-family: "Caveat", cursive;
+    font-size: 22px;
+    color: #6d3300;
+  }
+
+  .mapa-conceptual-autoevaluacion-img {
+    width: 70%;
+    margin-top: 3rem;
+  }
+
+  .proyeccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    position: relative;
+  }
+
+  .proyeccion > h3 {
+    font-size: 40px;
+    color: #4c4c6d;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border-left: 10px double #4c4c6d;
+    border-right: 10px double #4c4c6d;
+    font-family: "Dancing Script", cursive;
+  }
+
+  .proyeccion-cards {
+    background: #e8f6ef;
+    width: calc(80% - 42px);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: #4c4c6d;
+    border: 1px solid #8dfac5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .proyeccion-cards > p {
+    color: #4c4c6d;
+    font-style: italic;
+  }
+
+  .proyeccion-cards > p > b {
+    color: #00b5ec;
+  }
+
+  .agradecimiento {
+    margin-top: 2rem;
+    width: calc(50% - 40px);
+    background: #ebffe8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .agradecimiento p {
+    font-style: italic;
+  }
+
+  .agradecimiento-imagenes {
+    background: #b1f8a5;
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .agradecimiento-imagenes img {
+    width: calc(50% - 5px);
+  }
+
+  .capacidades-directivas {
+    width: 70%;
+    margin-top: 3rem;
+  }
+
+  .capacidades-directivas > h3 {
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+    border-left: 10px double #610269;
+    color: #610269;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .capacidades-directivas-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .capacidades-directivas-cards {
+    width: calc(50% - 54px);
+    background: #fbeafd;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f9bcff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .capacidades-directivas-cards > h5 {
+    font-size: 20px;
+    color: #4c4c6d;
+    margin-bottom: 15px;
+    border-left: 4px solid #60026981;
+    padding-left: 10px;
+  }
+
+  .capacidades-directivas-cards > p {
+    color: #4c4c6d;
+    font-style: italic;
+  }
+
+  .capacidades-directivas-cards > p > b {
+    color: #5c1563;
+  }
+
+  .frase-final {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+  }
+
+  .frase-final > h4 {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+    color: #4c4c6d;
   }
 }
