@@ -174,6 +174,46 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 /* main */
 
+.audio-player {
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.audio-player-1,
+.audio-player-1::-webkit-media-controls-panel {
+  background: #ffeedf;
+}
+
+.audio-player-2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.audio-player-2,
+.audio-player-2::-webkit-media-controls-panel {
+  background: #aaaaaa;
+}
+
+.audio-player-3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.audio-player-3,
+.audio-player-3::-webkit-media-controls-panel {
+  background: #edfaff;
+}
+
+.audio-player-4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.audio-player-4,
+.audio-player-4::-webkit-media-controls-panel {
+  background: #ffeedf;
+}
+
 .main {
   position: relative;
   display: flex;
